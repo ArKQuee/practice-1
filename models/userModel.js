@@ -44,6 +44,6 @@ function validatepassword(password) {
 function validateAge(dateOfBirth) {
   const today = new Date();
   const age = today.getFullYear() - dateOfBirth.getFullYear();
-  return age > 18;
+  return age >= 18;
 }
 module.exports = mongoose.model("User", userSchema);

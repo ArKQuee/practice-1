@@ -11,7 +11,7 @@ app.get("/", (req,res) => {
         res.send("Hello world");
         console.log("My first test API is working");
     }catch (error) {
-        res.status(500).send("server error");
+        res.status(500).send(error.message);
     }
 });
 
